@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Navigation Demo</string>
+
+    <!-- Navigation Label [ START ] -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Vikram Sarabhai Library</string>
+    <string name="nav_header_subtitle">24 X 7 Gateway to Knowledge</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <!-- Navigation Label [ END ] -->
+
+    <!-- Menu Label [ START ] -->
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Reload</string>
+    <!-- Menu Label [ END ] -->
+
+</resources>

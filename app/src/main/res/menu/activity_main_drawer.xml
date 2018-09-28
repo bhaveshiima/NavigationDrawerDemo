@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Static Pages">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:title="Home" />
+            <item
+                android:id="@+id/nav_introduction"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Introduction" />
+            <item
+                android:id="@+id/nav_services"
+                android:icon="@drawable/ic_sentiment_satisfied_black_24dp"
+                android:title="Services" />
+            <item
+                android:id="@+id/nav_staff"
+                android:icon="@drawable/ic_contact_mail_black_24dp"
+                android:title="Staff" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_contact_mail_black_24dp"
+                android:title="ContactUS" />
+        </menu>
+    </item>
+
+
+
+    <item android:title="Faculty">
+        <menu>
+            <item
+                android:id="@+id/faculty_about"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="About" />
+            <item
+                android:id="@+id/faculty_research"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Research" />
+            <item
+                android:id="@+id/faculty_publication"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Publications" />
+            <item
+                android:id="@+id/faculty_award"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Award and Honors" />
+        </menu>
+    </item>
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
