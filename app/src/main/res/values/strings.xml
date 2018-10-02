@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Navigation Demo</string>
+    <string name="app_name">App Name Come Here</string>
 
     <!-- Navigation Label [ START ] -->
     <string name="navigation_drawer_open">Open navigation drawer</string>

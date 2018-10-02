@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -18,6 +19,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        // Load default fragment [ START ]
+        var fManager = supportFragmentManager
+        var tx = fManager.beginTransaction()
+        tx.add(R.id.frag1,HomeFragment())
+        tx.commit()
+        // Load default fragment [ END ]
+
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -61,24 +70,45 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_home -> {
                 // Handle the camera action
-                Toast.makeText(this@MainActivity,"Home Page come here",
-                        Toast.LENGTH_LONG).show()
+              //  Toast.makeText(this@MainActivity,"Home Page come here",Toast.LENGTH_LONG).show()
+
+                var fManager = supportFragmentManager
+                var tx = fManager.beginTransaction()
+                tx.replace(R.id.frag1,HomeFragment())
+                tx.commit()
+
             }
             R.id.nav_introduction -> {
-                Toast.makeText(this@MainActivity,"Introcution FramLayout come here",
-                        Toast.LENGTH_LONG).show()
+              //  Toast.makeText(this@MainActivity,"Introcution FramLayout come here",Toast.LENGTH_LONG).show()
+                var fManager = supportFragmentManager
+                var tx = fManager.beginTransaction()
+                tx.replace(R.id.frag1,IntroductionFragment())
+                tx.commit()
+
+
             }
             R.id.nav_services -> {
-                Toast.makeText(this@MainActivity,"Services FramLayout come here",
-                        Toast.LENGTH_LONG).show()
+              //  Toast.makeText(this@MainActivity,"Services FramLayout come here",Toast.LENGTH_LONG).show()
+                var fManager = supportFragmentManager
+                var tx = fManager.beginTransaction()
+                tx.replace(R.id.frag1,ServicesFragment())
+                tx.commit()
+
             }
             R.id.nav_contactus -> {
-                Toast.makeText(this@MainActivity,"Contact US come here",
-                        Toast.LENGTH_LONG).show()
+              //  Toast.makeText(this@MainActivity,"Contact US come here", Toast.LENGTH_LONG).show()
+                var fManager = supportFragmentManager
+                var tx = fManager.beginTransaction()
+                tx.replace(R.id.frag1,ContactusFragment())
+                tx.commit()
+
             }
             R.id.nav_staff -> {
-                Toast.makeText(this@MainActivity,"Staff Listing come here",
-                        Toast.LENGTH_LONG).show()
+                var fManager = supportFragmentManager
+                var tx = fManager.beginTransaction()
+                tx.replace(R.id.frag1,StaffFragment())
+                tx.commit()
+
             }
 
         }
